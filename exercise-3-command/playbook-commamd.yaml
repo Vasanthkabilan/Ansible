@@ -1,0 +1,7 @@
+- name: Creata folder using command module
+  hosts: all
+  tasks:
+    - name: Command module 
+      command: touch /tmp/sample2.txt
+      args:
+        creates: /tmp/sample2.txt
